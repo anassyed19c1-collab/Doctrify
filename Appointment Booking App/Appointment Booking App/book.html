@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assessts/6.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Appointment</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="logo">Doctrify</a></h1>
+
+      <i class="fa-solid fa-bars" id="menuToggle"></i>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book Appointment</a>
+        <a href="myappointments.html">My Appointments</a>
+        <a href="login.html" id="loginLink">Login</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Book Your Medical Appointment</h2>
+      <p class="subtitle">Select disease, doctor, day, and time slot below</p>
+
+      <form id="appointmentForm" class="form-card">
+        <div class="form-group">
+          <label>Disease</label>
+          <select id="diseaseSelect">
+            <option value="">Select Disease</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Doctor</label>
+          <select id="doctorSelect" disabled>
+            <option value="">Select Doctor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Appointment Day</label>
+          <select id="daySelect" disabled>
+            <option value="">Select Day</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Time Slot</label>
+          <select id="timeSelect" disabled>
+            <option value="">Select Time</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="03:00 PM">03:00 PM</option>
+            <option value="05:00 PM">05:00 PM</option>
+          </select>
+        </div>
+
+        <br />
+        <button type="submit" class="btn">Book My Appointment</button>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="book.js" type="module"></script>
+  </body>
+</html>

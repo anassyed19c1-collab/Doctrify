@@ -1,0 +1,1006 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Mozilla+Headline:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #1cd98e;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #17b777;
+}
+
+
+
+/* ===== Hero Banner Section ===== */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* full height on desktop */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Banner Image Styling */
+.hero-banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+  filter: brightness(10%);
+  transition: transform 0.7s ease-in-out;
+}
+
+
+
+/* Text Content on Image */
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+/* Button Styling */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #1cd98e;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #63c492;
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* ====== FEATURES ====== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 100px 10%;
+  background: #f9f9f9;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: #1cd98e;
+  margin-bottom: 10px;
+}
+
+/* ====== ABOUT PREVIEW ====== */
+.about-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 80px 10%;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.about-text h2 {
+  color: #1cd98e;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+/* ====== HOW IT WORKS ====== */
+.how-it-works {
+  text-align: center;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+.how-it-works h2 {
+  color: #1cd98e;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  background: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  /* width: 150px; */
+}
+
+.step span {
+  display: inline-block;
+  background: #1cd98e;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ====== TESTIMONIALS ====== */
+.testimonials {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #1cd98e;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 60px 30px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Footer Section ===== */
+.footer {
+  background-color: #1cd98e;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About */
+.footer-about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f3f3f3;
+}
+
+/* Quick Links */
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Contact Section */
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 12px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #e9e9e9;
+}
+
+/* ===== Banner Image Styling ===== */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust height as needed */
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures perfect crop */
+  filter: brightness(75%); /* Slight dark overlay for better text contrast */
+  transition: transform 0.6s ease;
+}
+
+.hero-banner:hover img {
+  transform: scale(1.05); /* Smooth zoom effect on hover */
+}
+
+/* Optional: If you have text over image */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+
+
+
+
+/* Index Page CSS */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fafcfd;
+  color: #333;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+button {
+  background-color: #1cd98e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #63c492;
+}
+
+
+
+/* Hamburger icon style */
+#menuToggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.logo {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+header, .navbar {
+  background-color: #1cd98e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1,
+.navbar h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: overline;
+}
+
+nav a:active {
+  text-decoration: overline;
+}
+
+#logoutBtn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+
+.home-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+} 
+
+
+
+
+
+
+
+
+
+/* signup Page CSS */
+
+
+main {
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  margin-top: 70px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+} 
+
+
+
+
+
+/* book.css */
+
+
+
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container h2 {
+  text-align: center;
+  /* letter-spacing: 20px; */
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #1cd98e;
+  margin-bottom: 6px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+select:disabled {
+  background: #f2f2f2;
+  cursor: not-allowed;
+}
+
+select:focus {
+  border-color: #1cd98e;
+}
+
+
+.btn {
+  background: #1cd98e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #63c492;
+}
+
+#logoutBtn {
+  background: transparent;
+  color: white;
+  padding: 12px;
+  margin-right: 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+#logoutBtn:hover {
+  background: transparent;
+  text-decoration: overline;
+}
+
+
+
+
+/* Appt Booked CSS */
+
+/* Cancelled card ko red background dena */
+ .card.cancelled {
+  border-left: 6px solid #ff4c4c;
+  background-color: #ffe5e5;
+}
+
+/* Cancel button styling */
+ .cancel-btn {
+  background-color: #1cd98e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Delete button styling */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #b92d39;
+}
+
+
+
+.card {
+  /* background-color: #666; */
+  margin-bottom: 50px;
+  border: 1px solid #ddebe5;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+
+/* My Appointments page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafcfd;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease;
+}
+
+
+/* Page container */
+.appointments-container {
+  max-width: 1100px;
+  margin: 100px auto 60px auto;
+  padding: 0 20px;
+}
+
+.appointments-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appointments-header h1 {
+  color: #1cd98e;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.appointments-header p {
+  color: #555;
+}
+
+
+/* Grid of appointment cards */
+.appointments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.appointment-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.appointment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+
+
+.appointment-card h3 {
+  color: #1cd98e;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.appointment-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+
+/* Status */
+.status {
+  display: inline-block;
+  padding: 5px 12px;
+  margin-right: 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  top: 15px;
+  right: 15px;
+}
+
+.status.confirmed {
+  background-color: #1cd98e;
+  color: #fff;
+}
+
+.status.pending {
+  background-color: #1cd98e;
+  color: #fff;
+  padding: 10px;
+}
+
+.status.cancelled {
+  background-color: #ff5c5c;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Cancel button */
+.cancel-btn {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1cd98e;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #13b876;
+  transform: scale(1.05);
+}
+
+.cancel-btn:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .appointments-header h1 {
+    font-size: 1.6rem;
+  }
+  .appointment-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointments-container {
+    margin-top: 80px;
+  }
+  .appointments-header h1 {
+    font-size: 1.4rem;
+  }
+  .appointment-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  header h1,
+  .navbar h1 {
+    font-size: 1.3rem;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  input,
+  select {
+    font-size: 0.9rem;
+  }
+  
+  button,
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+  
+  #logoutBtn {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+/* Mobile responsive design */
+ @media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1cd98e;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 50vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .about-preview { flex-direction: column; text-align: center; }
+  .steps { flex-direction: column; align-items: center; }
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .hero-banner {
+    height: 70vh;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 65vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 55vh;
+  }
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+}
+}
+
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 70vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 60vh;
+  }
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    margin-bottom: 80px;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assessts/6.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Appointments</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="logo">Doctrify</a></h1>
+
+      <i class="fa-solid fa-bars" id="menuToggle"></i>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book Appointment</a>
+        <a href="myappointments.html">My Appointments</a>
+        <a href="login.html" id="loginLink">Login</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>My Appointments Shedule</h2>
+      <div id="appointmentsContainer" class="appointments-list"></div>
+    </main>
+
+    <div id="appointmentsContainer" class="appointments-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="myappointments.js" type="module"></script>
+  </body>
+</html>
